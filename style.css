@@ -1,8 +1,8 @@
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: #dcf0f6;
-  font-family: 'Mooli', sans-serif;
+  background-color: #edf2f4;
+  font-family: "Mooli", sans-serif;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 }
 
 h1 {
-  background-color: #D84727;
+  background-color: #d84727;
   color: white;
   width: 45%;
   margin: 0.5rem auto;
@@ -19,7 +19,8 @@ h1 {
   border: 2px solid #b73215;
 }
 
-.container1, .container2 {
+.container1,
+.container2 {
   display: flex;
   width: 100%;
   text-align: center;
@@ -28,5 +29,5 @@ h1 {
 }
 
 .info_section {
-  max-width: 28%;;
+  max-width: 28%;
 }
