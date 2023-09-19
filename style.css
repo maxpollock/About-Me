@@ -1,33 +1,117 @@
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: #edf2f4;
+  background-color: #cde6f3;
   font-family: "Mooli", sans-serif;
+  max-width: 100vw;
+  scroll-behavior: smooth;
 }
 
-header {
+header,
+.quiz_section {
   text-align: center;
 }
 
+.instruction {
+  text-align: left;
+  margin-left: 13rem;
+  position: relative;
+  top: 4.5rem;
+}
+
+main {
+  display: flex;
+}
+
 h1 {
-  background-color: #d84727;
+  background-color: #6b9ac4;
   color: white;
   width: 45%;
-  margin: 0.5rem auto;
+  margin: 4rem auto 4rem;
   padding: 1rem;
   border-radius: 9px;
-  border: 2px solid #b73215;
+  border: 2px solid black;
+}
+
+h3 {
+  background-color: #f4b942;
+  color: black;
+  width: 15%;
+  margin: 1rem auto 2rem;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1.8px black solid;
+  transition: 0.5s;
+}
+
+h3:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transform: scale(1.4);
 }
 
 .container1,
 .container2 {
-  display: flex;
+  /* display: flex; */
   width: 100%;
   text-align: center;
   justify-content: space-around;
   margin: 2rem 0rem;
+  padding: 1rem;
 }
 
 .info_section {
-  max-width: 28%;
+  width: 49%;
+  max-height: 260px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 0.5rem;
+  transition: 1s;
+  cursor: pointer;
+  margin-right: 0;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.hidden_work, .hidden_goals, .hidden_education, .hidden_history, .desc_img, .uea_img {
+  display: none;
+}
+
+.history:hover .hidden_history, .education:hover .hidden_education, .work:hover .hidden_work, .goals:hover .hidden_goals, .history:hover .hidden_history {
+  display: block;
+  cursor: pointer;
+  transition-delay: 0.5s;
+}
+
+.uni:hover .uea_img, .school:hover .desc_img {
+  display: inline;
+  cursor: pointer;
+  transition-delay: 0.5s;
+}
+
+.info_section:hover {
+  transform: scale(1.1);
+  }
+
+h2 {
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.info_section p {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.uea_img {
+  max-width: 300px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+footer {
+  margin-left: 1rem;
 }

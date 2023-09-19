@@ -22,29 +22,33 @@
         </script>
         , welcome to my about me page!
       </h1>
+       <div class="quiz_section">
+        <h3 onclick="quizQuestions();">Click here to start the quiz!</h3>
+        <h4 class="instruction">Please hover over each tile to reveal the information</h4>
+      </div>
     </header>
     <main>
       <div class="container1">
-        <div class="info_section">
+        <div class="info_section history">
           <h2>Short history of me</h2>
-          <p>
+          <p class="hidden_history">
             Born in Essex, grew up in the Middle East. Moved to Norfolk for
             University. Short stint living in Cambridge and now back in my home
             of Norwich. Recently turned dog-dad and home owner.
           </p>
         </div>
-        <div class="info_section">
+        <div class="info_section education">
           <h2>Education</h2>
-          <p>
+          <p class="hidden_education">
             Went to Heathcote Primary in Essex. Moved to Dubai English Speaking
             College for Secondary. Went to University of East Anglia to complete
             a degree in Philosophy and Politics. Currently enrolled with Tech
             Educators learning Full stack development.
           </p>
         </div>
-        <div class="info_section">
+        <div class="info_section work">
           <h2>Work experience</h2>
-          <p>
+          <p class="hidden_work">
             My first job was on a retail stand in a shopping mall. Second job
             was a summer stint working for a restaurant in Bicester Village.
             Third job was at The Ivy in Norwich. Then started my professional
@@ -55,24 +59,34 @@
       </div>
 
       <div class="container2">
-        <img class="container_img info_section" src="\" alt="#" />
-        <div class="info_section">
+        <div class="info_section school">
+          <h2>My school logo</h2>
+        <img
+          class="container_img desc_img"
+          src="./images/Dubai_English_Speaking_College.gif"
+          alt="Dubai English Speaking College Logo"
+        />
+      </div>
+        <div class="info_section goals">
           <h2>My future goals</h2>
-          <p>
+          <p class="hidden_goals">
             Start a new career that makes me happy and which invests in myself
             over time.
           </p>
-          <p>Run a half marathon.</p>
-          <p>
+          <p class="hidden_goals">Run a half marathon.</p>
+          <p class="hidden_goals">
             Most importantly, live my life to the fullest because it's too
             short.
           </p>
         </div>
-        <img class="container_img info_section" src="\" alt="#" />
+        <div class="info_section uni">
+          <h2>University I went to</h2>
+        <img
+          class="container_img uea_img"
+          src="./images/UEA.jpg"
+          alt="UEA Ziggurats"
+        />
       </div>
-
-      <div class="quiz_section">
-        <h3 onclick="quizQuestions();">Click here to start the quiz!</h3>
       </div>
     </main>
 

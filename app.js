@@ -11,7 +11,9 @@ function askName() {
 // I'm level 6 graded in Drums
 
 function quizQuestions() {
-  let start = confirm("You've clicked to start the quiz. Click Ok to start or Cancel to exit.");
+  let start = confirm(
+    "You've clicked to start the quiz. Click Ok to start or Cancel to exit."
+  );
   if (start === false) {
     alert("Quiz has been cancelled, you party pooper.");
     return;
@@ -29,7 +31,9 @@ function quizQuestions() {
     alert("Correct, everbody was Kung Fu fighting! (including me).");
   }
 
-  let bluePeter = prompt("I was awarded a Blue Peter badge as a child.").toLowerCase();
+  let bluePeter = prompt(
+    "I was awarded a Blue Peter badge as a child."
+  ).toLowerCase();
   if (bluePeter === "yes") {
     alert("I wish! My girlfriend got one for doing some drawings though.");
     // } else {
