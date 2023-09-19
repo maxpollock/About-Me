@@ -1,3 +1,5 @@
+"use strict";
+
 function askName() {
   let username = prompt("Hey, what's your name?");
   document.write(username);
