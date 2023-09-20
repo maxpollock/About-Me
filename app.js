@@ -1,8 +1,10 @@
 "use strict";
 
+let myUsername;
+
 function askName() {
-  let username = prompt("Hey, what's your name?");
-  document.write(username);
+  let myUsername = prompt("Hey, what's your name?");
+  document.write(myUsername);
 }
 
 // Please answer true or false to the following questions.
@@ -82,5 +84,9 @@ function quizQuestions() {
     alert("Yup! I started learning when I was 7 years old.");
   }
 
-  alert("Thanks for taking part in my quiz. You did a good job :).");
+  alert(
+    "Thanks for taking part in my quiz " +
+      myUsername +
+      ". You did a good job :)."
+  );
 }
