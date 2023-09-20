@@ -69,7 +69,7 @@ h3:hover {
 
 .info_section {
   width: 56%;
-  max-height: 270px;
+  max-height: 350px;
   background-color: white;
   border: 2px solid black;
   border-radius: 7px;
@@ -95,6 +95,14 @@ h2 {
 .info_section p {
   font-size: 1.4rem;
   line-height: 1.5rem;
+}
+
+.info_section li {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 
 .uea_img {

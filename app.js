@@ -84,9 +84,27 @@ function quizQuestions() {
     alert("Yup! I started learning when I was 7 years old.");
   }
 
+  let ageQu = prompt("Rouned up to a whole year, how old is my dog? Please answer with a number for this one.");
+  let userAttempt = 0;
+
+  for (let i = 0; i < 3; i++) {
+    userAttempt++;
+    if (ageQu > 2) {
+      ageQu = prompt("She's not that old, please try again");
+    } else if (ageQu < 2) {
+      userAttempt++;
+      ageQu = prompt("She's older than that! Please try again");
+    } else {
+      alert("Nice one :) You got it right!");
+      break;
+    }
+  }
+
+  if (userAttempt > 3) {
+    alert("Sorry you have ran out of attempts. She is 2 years old.");
+  }
+
   alert(
-    "Thanks for taking part in my quiz " +
-      myUsername +
-      ". You did a good job :)."
+    "Thanks for taking part in my quiz. You did a good job :)."
   );
 }
