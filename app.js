@@ -29,9 +29,6 @@ function quizQuestions() {
   let blackBelt = prompt("I have a black belt in a martial art.").toLowerCase();
   if (blackBelt === "no") {
     alert("Wrong! Everbody was Kung Fu fighting! (including me).");
-    // } else {
-    //   console.log("Everbody was Kung Fu fighting! (including me).");
-    // }
   } else {
     correctAnswer++;
     alert("Correct, everbody was Kung Fu fighting! (including me).");
@@ -42,9 +39,6 @@ function quizQuestions() {
   ).toLowerCase();
   if (bluePeter === "yes") {
     alert("I wish! My girlfriend got one for doing some drawings though.");
-    // } else {
-    //   console.log("Yep, I haven't got one.");
-    // }
   } else {
     correctAnswer++;
     alert("Yep, I haven't got one. I can still dream though, right?");
@@ -57,10 +51,6 @@ function quizQuestions() {
     alert(
       "Incorrect! I had one called Chilly too, after Red Hot Chilli Peppers."
     );
-    // } else {
-    //   console.log(
-    //     "Nice one, I had another cat called Chilli too, named after the Red Hot Chilli Peppers."
-    //   );
   } else {
     correctAnswer++;
     alert(
@@ -71,9 +61,6 @@ function quizQuestions() {
   let queen = prompt("I once gave Queen Elizabeth a high-five.").toLowerCase();
   if (queen === "yes") {
     alert("I infact did not high five lizzie.");
-    // } else {
-    //   console.log("Well done, of course I didn't.");
-    // }
   } else {
     correctAnswer++;
     alert("Well done, of course I didn't.");
@@ -82,9 +69,6 @@ function quizQuestions() {
   let drums = prompt("I'm level 6 graded in Drums").toLowerCase();
   if (drums === "no") {
     alert("Bah dum tiss! I do have a grade 6 in Drums.");
-    // } else {
-    //   console.log("Yup! I started learning when I was 7 years old");
-    // }
   } else {
     correctAnswer++;
     alert("Yup! I started learning when I was 7 years old.");
