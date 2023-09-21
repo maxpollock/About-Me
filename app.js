@@ -95,7 +95,7 @@ function quizQuestions() {
   );
   let userAttempt = 0;
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 1; i < 5; i++) {
     userAttempt++;
     if (ageQu > 2) {
       ageQu = prompt("She's not that old, please try again with a lower age!");
@@ -109,7 +109,7 @@ function quizQuestions() {
     }
   }
 
-  if (userAttempt >= 4) {
+  if (userAttempt > 4) {
     alert("Sorry you have ran out of attempts. She is 2 years old.");
   }
 
@@ -128,7 +128,7 @@ function quizQuestions() {
   ).toLowerCase();
   let answerAttempt = 0;
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i <= 5; i++) {
     answerAttempt++;
     if (myPlaces.indexOf(placesAnswer) < 0) {
       placesAnswer = prompt(
@@ -141,7 +141,7 @@ function quizQuestions() {
     }
   }
 
-  if (answerAttempt >= 5) {
+  if (answerAttempt > 5) {
     alert(
       "Ah unlucky! Your options were either: Norwich, Cambridge, Essex or Dubai"
     );
